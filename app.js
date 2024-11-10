@@ -66,7 +66,7 @@ function addCustomQuote(event) {
   // Clear input field after submission
   quoteInput.value = "";
 
-  // Optionally, display the newly added quote immediately
+  // Optionally, display the newly added quote immediately.
   quoteText.innerHTML = `"${customQuote}"`;
   authorText.innerHTML = "- Anonymous";
 }
