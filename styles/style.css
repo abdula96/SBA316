@@ -4,8 +4,8 @@ body {
   text-align: center;
   background: linear-gradient(
     to bottom,
-    #ff7f50,
-    #ff6347
+    #7ed0e5,
+    #199fe3
   ); /* Gradient from Coral to Tomato */
   padding: 50px 30px;
   margin: 0;
@@ -139,8 +139,8 @@ input[type="submit"]:active {
 footer {
   background: linear-gradient(
     to right,
-    #ff6347,
-    #ff7f50
+    #40acf4,
+    #50adff
   ); /* Gradient from Tomato to Coral */
   color: #fff;
   padding: 20px;
