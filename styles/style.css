@@ -1,0 +1,189 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #ff7f50,
+    #ff6347
+  ); /* Gradient from Coral to Tomato */
+  padding: 50px 30px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Quote Section Background */
+#quote-container {
+  background: #ffffff; /* White background for quote area */
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  max-width: 650px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on quote container */
+#quote-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Quote Styling */
+.quote {
+  font-size: 24px;
+  font-style: italic;
+  color: #4b0082; /* Indigo */
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fffae6; /* Light Yellow background for quotes */
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Author Styling */
+.author {
+  font-size: 18px;
+  color: #ff4500; /* OrangeRed */
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #ff6347; /* Tomato */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff4500; /* OrangeRed */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+/* Form Section Background */
+form {
+  background: #ffffe0; /* Light Yellow */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* Input Fields */
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 300px;
+  margin: 10px 0;
+  border: 2px solid #dcdcdc;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6347;
+  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.3);
+}
+
+input[type="submit"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #008cba; /* Light Blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005f6a;
+  transform: scale(1.05);
+}
+
+input[type="submit"]:active {
+  transform: scale(1);
+}
+
+/* Error Message Styling */
+.error {
+  color: #ff0000; /* Red */
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Gradient Footer Background */
+footer {
+  background: linear-gradient(
+    to right,
+    #ff6347,
+    #ff7f50
+  ); /* Gradient from Tomato to Coral */
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  /* Quote and Form responsiveness */
+  .quote {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  #quote-container {
+    width: 90%;
+  }
+}
