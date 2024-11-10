@@ -56,4 +56,13 @@ function addCustomQuote(event) {
     errorMessage.textContent = "Please enter a valid quote.";
     return;
   }
+
+  // Clear error message if input is valid
+  errorMessage.textContent = "";
+
+  // Add custom quote to the array and display it
+  quotes.push({ text: customQuote, author: "Anonymous" });
+
+  // Clear input field after submission
+  quoteInput.value = "";
 }
