@@ -30,3 +30,30 @@ const quotes = [
     author: "William Butler Yeats",
   },
 ];
+
+// Event listeners
+randomQuoteBtn.addEventListener("click", displayRandomQuote);
+quoteForm.addEventListener("submit", addCustomQuote);
+
+// Function to display a random quote
+function displayRandomQuote() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const randomQuote = quotes[randomIndex];
+
+  // Modify content dynamically
+  quoteText.innerHTML = `"${randomQuote.text}"`;
+  authorText.innerHTML = `- ${randomQuote.author}`;
+}
+
+// Function to add a custom quote
+function addCustomQuote(event) {
+  event.preventDefault();
+
+  const customQuote = quoteInput.value.trim();
+
+  // Validate input (HTML5 validation + JavaScript check)
+  if (customQuote === "") {
+    errorMessage.textContent = "Please enter a valid quote.";
+    return;
+  }
+}
